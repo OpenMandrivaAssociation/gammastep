@@ -25,19 +25,20 @@ BuildRequires: intltool
 %install
 %make_install
 
-%post
-%systemd_user_post %{name}.service
-%systemd_user_post %{name}-indicator.service
-%preun
-%systemd_user_preun %{name}.service
-%systemd_user_preun %{name}-indicator.service
+#%post
+#%systemd_user_post %{name}.service
+#%systemd_user_post %{name}-indicator.service
+
+#%preun
+#%systemd_user_preun %{name}.service
+#%systemd_user_preun %{name}-indicator.service
 
 %files
 %license README.md
 %{_bindir}/%{name}*
 %{_prefix}/lib/python3.11/site-packages/*
-%{_userunitdir}/gammastep-indicator.service
-%{_userunitdir}/gammastep.service
+#%{_userunitdir}/gammastep-indicator.service
+#%{_userunitdir}/gammastep.service
 %{_datadir}//applications/*
 %{_iconsdir}/hicolor/scalable/apps/*
 %{_datadir}//locale/ar/LC_MESSAGES/gammastep.mo
