@@ -1,6 +1,6 @@
 Name:		gammastep
 Version:	2.0.11
-Release:	1
+Release:	2
 Source0:	https://gitlab.com/chinstrap/gammastep/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 Summary:	Adjust the color temperature of your screen according to your surroundings
 URL:		https://gitlab.com/chinstrap/gammastep
@@ -25,24 +25,16 @@ BuildRequires: intltool
 %install
 %make_install
 
-#%post
-#%systemd_user_post %{name}.service
-#%systemd_user_post %{name}-indicator.service
-
-#%preun
-#%systemd_user_preun %{name}.service
-#%systemd_user_preun %{name}-indicator.service
-
 %files
 %license README.md
 %{_bindir}/%{name}*
-%{_prefix}/lib/python3.11/site-packages/*
-#%{_userunitdir}/gammastep-indicator.service
-#%{_userunitdir}/gammastep.service
-%{_datadir}//applications/*
+%{_prefix}/lib/python%{pyver}/site-packages/*
+%{_userunitdir}/gammastep-indicator.service
+%{_userunitdir}/gammastep.service
+%{_datadir}/applications/*
 %{_iconsdir}/hicolor/scalable/apps/*
-%{_datadir}//locale/ar/LC_MESSAGES/gammastep.mo
-%{_datadir}//locale/be/LC_MESSAGES/gammastep.mo
+%{_datadir}/locale/ar/LC_MESSAGES/gammastep.mo
+%{_datadir}/locale/be/LC_MESSAGES/gammastep.mo
 %{_datadir}/locale/bg/LC_MESSAGES/gammastep.mo
 %{_datadir}/locale/ca/LC_MESSAGES/gammastep.mo
 %{_datadir}/locale/cs/LC_MESSAGES/gammastep.mo
