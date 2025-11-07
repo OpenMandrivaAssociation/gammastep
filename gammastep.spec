@@ -9,6 +9,8 @@ Group:		Window Manager/Utility
 
 BuildRequires: %{mklibname gettext -d}
 BuildRequires: intltool
+BuildRequires: pkgconfig(glib-2.0)
+
 
 
 %description
