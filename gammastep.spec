@@ -1,6 +1,6 @@
 Name:		gammastep
 Version:	2.0.11
-Release:	3
+Release:	4
 Source0:	https://gitlab.com/chinstrap/gammastep/-/archive/v%{version}/%{name}-v%{version}.tar.gz
 Summary:	Adjust the color temperature of your screen according to your surroundings
 URL:		https://gitlab.com/chinstrap/gammastep
