@@ -1,7 +1,7 @@
 Name:		gammastep
 Summary:	Adjust the color temperature of your screen according to your surroundings
 Version:	2.0.11
-Release:	3
+Release:	4
 License:	GPL-3.0-or-later
 Group:		Window Manager/Utility
 URL:		https://gitlab.com/chinstrap/gammastep
@@ -22,7 +22,7 @@ BuildRequires:	pkgconfig(gio-2.0)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-2.0)
 BuildRequires:	pkgconfig(libdrm)
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(wayland-client)
 BuildRequires:	pkgconfig(wayland-scanner)
 BuildRequires:	pkgconfig(x11)
